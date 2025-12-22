@@ -1,0 +1,61 @@
+[
+  {
+    "title": "Cricket Score Bord",
+    "desc": "Real-time cricket scoreboard with sockets.",
+    "tech": ["React", "MongoDB", "Socket.io"],
+    "code": "https://github.com/Remi2121/Cricket-score-bord",
+    "image": "/projects/cricket.png"
+  },
+  {
+    "title": "Fit 21 Website",
+    "desc": "University Nexus Club project – site for event & member info.",
+    "tech": ["React", "Firebase", "MediaPipe"],
+    "live": "https://fit21-d2c9b.web.app",
+    "code": "https://github.com/Remi2121/Fit21-Web.git",
+   "image": "/projects/fit21.png"
+  },
+  {
+    "title": "Telegram Chat Bot",
+    "desc": "Conversational Telegram bot with LangChain pipeline.",
+    "tech": ["Python", "LangChain", "Telegram Bot API"],
+    "code": "https://github.com/Remi2121/Telegram-Bot.git",
+    "image": "/projects/cricket.png"
+  },
+  {
+    "title": "Moddify",
+    "desc": "React Expo + Firebase app (auth, storage).",
+    "tech": ["React Native (Expo)", "Firebase"],
+    "code": "https://github.com/Remi2121/Project.git",
+    "image": "/projects/cricket.png"
+  },
+  {
+    "title": "AI Pet Guru",
+    "desc": "Pet-care Q&A assistant with Gemini + Firebase.",
+    "tech": ["React", "Firebase", "Gemini"],
+    "code": "https://github.com/Remi2121/ai-pet-guru-website.git",
+    "image": "/projects/ai-pet-gru.png"
+  },
+
+ 
+  {
+    "title": "Clinician Dashboard",
+    "desc": "React app for patient insights and risk meters.",
+    "tech": ["React", "Framer Motion"],
+    "code": "#",
+    "image": "/projects/clinician-dashboard.png"
+  },
+  {
+    "title": "Animated Portfolio",
+    "desc": "One-page portfolio with smooth scroll and orbit photo.",
+    "tech": ["React", "Vite", "CSS"],
+    "code": "#",
+    "image": "/projects/animated-portfolio.png"
+  },
+  {
+    "title": "Task Manager",
+    "desc": "Simple CRUD with local storage.",
+    "tech": ["React", "LocalStorage"],
+    "code": "#",
+    "image": "/projects/task-manager.png"
+  }
+]

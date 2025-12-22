@@ -1,0 +1,22 @@
+:root{
+  /* Backgrounds */
+  --bg: #000000;
+  --panel: #000000;          /* slight lift from pure black */
+
+  /* Accent Blues */
+  --blue: #60a5fa;           /* primary blue */
+  --blue-strong: #93c5fd;    /* highlight blue */
+
+  /* Text */
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+
+  /* Borders */
+  --border: rgba(96,165,250,.28);
+
+  /* ✨ Premium Neon Glow */
+  --glow:
+    0 0 14px rgba(58, 214, 238, 0.596),
+    0 0 32px rgba(0, 0, 0, 0.25),
+    inset 0 0 12px rgb(96, 165, 250);
+}

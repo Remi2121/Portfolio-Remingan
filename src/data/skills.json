@@ -1,0 +1,15 @@
+[
+  { "name": "HTML", "icon": "📄", "level": 90, "category": "frontend" },
+  { "name": "CSS", "icon": "🎨", "level": 85, "category": "frontend" },
+  { "name": "JavaScript", "icon": "⚡", "level": 80, "category": "frontend" },
+  { "name": "React", "icon": "⚛️", "level": 78, "category": "frontend" },
+
+  { "name": "Firebase", "icon": "🔥", "level": 70, "category": "backend" },
+
+  { "name": "Git", "icon": "🌿", "level": 75, "category": "tools" },
+
+  { "name": "Python", "icon": "🐍", "level": 75, "category": "other" },
+  { "name": "Java", "icon": "☕", "level": 70, "category": "other" },
+  { "name": "C++", "icon": "💻", "level": 68, "category": "other" },
+  { "name": "Figma (UI Design)", "icon": "🎨", "level": 80, "category": "other" }
+]

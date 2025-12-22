@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Frontend Developer",
+    "issuer": "Coursera",
+    "year": "2024",
+    "image": "cert1.png",
+    "note": "Responsive Design"
+  },
+  {
+    "title": "React Basics",
+    "issuer": "Meta",
+    "year": "2025",
+    "image": "cert2.png",
+    "note": "Hooks & State"
+  }
+]
