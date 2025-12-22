@@ -1,3 +1,5 @@
-export default function GlowCard({children, style}){
-  return <div className="card" style={{padding:10, ...style}}>{children}</div>
+import "./GlowCard.css";
+
+export default function GlowCard({ children, className = "" }) {
+  return <div className={`glow-card ${className}`}>{children}</div>;
 }

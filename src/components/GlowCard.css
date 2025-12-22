@@ -1,0 +1,16 @@
+.glow-card {
+  background: #020617;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(96, 104, 250, 0.4);
+  box-shadow:
+    0 0 20px rgba(40, 47, 242, 0.634);
+  transition: all 0.3s ease;
+}
+
+.glow-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 35px rgba(96, 104, 250, 0.8),
+    inset 0 0 16px rgba(96,165,250,0.2);
+}

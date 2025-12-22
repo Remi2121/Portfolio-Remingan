@@ -1,61 +1,51 @@
-import data from '../data/projects.json'
-import GlowCard from '../components/GlowCard.jsx'
+import { useState } from "react";
+import data from "../data/projects.json";
+import GlowCard from "../components/GlowCard.jsx";
+import "./Projects.css";
 
-const FALLBACK_IMG = '/projects/cricket.png' // make sure this exists in /public/projects/
+const FALLBACK_IMG = "/projects/cricket.png";
 
-export default function Projects(){
+export default function Projects() {
+  const [activeImg, setActiveImg] = useState(null);
+
   return (
-    <section className="section" id="projects">
+    <section className="projects-section" id="projects">
       <div className="container">
         <h2 className="title">Projects</h2>
-        <br/>
-        <br/>
-        <div className="grid grid--3">
+
+        {/* HORIZONTAL SCROLL */}
+        <div className="projects-row">
           {data.map((p, idx) => (
-            <GlowCard key={idx}>
-              {/* Thumb with robust fallback */}
+            <GlowCard key={idx} className="project-card">
               <img
                 src={p.image || FALLBACK_IMG}
-                alt={p.title || 'Project'}
+                alt={p.title}
                 className="project-thumb"
-                loading="lazy"
-                onError={(e) => {
-                  if (e.currentTarget.src !== window.location.origin + FALLBACK_IMG) {
-                    e.currentTarget.src = FALLBACK_IMG
-                  }
-                }}
+                onClick={() => setActiveImg(p.image || FALLBACK_IMG)}
+                onError={(e) => (e.currentTarget.src = FALLBACK_IMG)}
               />
 
-              {/* Title + desc */}
-              {p.title && <h3 style={{ margin: '10px 0 6px' }}>{p.title}</h3>}
-              {p.desc && <p className="subtitle" style={{ margin: 0 }}>{p.desc}</p>}
+              <h3 className="project-title">{p.title}</h3>
+              <p className="project-desc">{p.desc}</p>
 
-              {/* Tech badges (optional) */}
-              {Array.isArray(p.tech) && p.tech.length > 0 && (
-                <div className="badges" style={{ marginTop: 8 }}>
+              {Array.isArray(p.tech) && (
+                <div className="badges">
                   {p.tech.map((t, i) => (
                     <span key={i} className="badge">{t}</span>
                   ))}
                 </div>
               )}
-
-              {/* Actions (only show if present) */}
-              <div style={{ marginTop: 12, display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                {p.code && (
-                  <a className="btn" href={p.code} target="_blank" rel="noopener noreferrer">
-                    Code
-                  </a>
-                )}
-                {p.live && (
-                  <a className="btn" href={p.live} target="_blank" rel="noopener noreferrer">
-                    Live
-                  </a>
-                )}
-              </div>
             </GlowCard>
           ))}
         </div>
       </div>
+
+      {/* IMAGE FULL VIEW */}
+      {activeImg && (
+        <div className="img-modal" onClick={() => setActiveImg(null)}>
+          <img src={activeImg} alt="preview" />
+        </div>
+      )}
     </section>
-  )
+  );
 }

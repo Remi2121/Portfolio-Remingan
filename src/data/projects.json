@@ -19,7 +19,7 @@
     "desc": "Conversational Telegram bot with LangChain pipeline.",
     "tech": ["Python", "LangChain", "Telegram Bot API"],
     "code": "https://github.com/Remi2121/Telegram-Bot.git",
-    "image": "/projects/cricket.png"
+    "image": "/projects/telegrambot.png"
   },
   {
     "title": "Moddify",
@@ -38,11 +38,11 @@
 
  
   {
-    "title": "Clinician Dashboard",
+    "title": "Explainable-AI-in-HealthCare",
     "desc": "React app for patient insights and risk meters.",
-    "tech": ["React", "Framer Motion"],
-    "code": "#",
-    "image": "/projects/clinician-dashboard.png"
+    "tech": ["React", "Framer Motion","Ml"],
+    "code": "https://github.com/Remiltan123/Explainable-AI-in-HealthCare.git",
+    "image": "/projects/helath_ai.png"
   },
   {
     "title": "Animated Portfolio",
