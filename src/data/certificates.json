@@ -1,16 +1,23 @@
 [
   {
-    "title": "Frontend Developer",
-    "issuer": "Coursera",
-    "year": "2024",
-    "image": "cert1.png",
-    "note": "Responsive Design"
+    "title": "Full Stack Developer",
+    "issuer": "Simplilearn SkillUp",
+    "year": "2025",
+    "image": "/certificate/full-stack.png",
+    "note": "Completed Free Full Stack Developer Course"
   },
   {
-    "title": "React Basics",
-    "issuer": "Meta",
+    "title": "React Portfolio Bootcamp",
+    "issuer": "DevTown (Startup India, MSME)",
     "year": "2025",
-    "image": "cert2.png",
-    "note": "Hooks & State"
+    "image": "/certificate/react-bootcamp.png",
+    "note": "5-day intensive bootcamp on building React portfolios"
+  },
+  {
+    "title": "Prompt Engineering & Generative AI",
+    "issuer": "DevTown × Microsoft Student Chapter (MSIT)",
+    "year": "2025",
+    "image": "/certificate/prompt-genai.png",
+    "note": "Hands-on bootcamp on GenAI & prompt design"
   }
 ]
