@@ -1,10 +1,16 @@
 /* ================================
    PROJECTS SECTION
 ================================ */
-.projects-section {
-  background: #020617;
-  padding: 70px 0;
+.projects-section{
+  position: relative;
   overflow: hidden;
+  padding: 80px 0;
+}
+
+/* content always above bubbles */
+.projects-section .container{
+  position: relative;
+  z-index: 1;
 }
 
 .title {
@@ -31,6 +37,25 @@
 .projects-row::-webkit-scrollbar-thumb {
   background: rgba(96, 165, 250, 0.6);
   border-radius: 10px;
+}
+
+/* ================================
+   HIDE HORIZONTAL SCROLLBAR (CLEAN)
+================================ */
+
+/* Chrome, Edge, Safari */
+.projects-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+.projects-row {
+  scrollbar-width: none;
+}
+
+/* IE / old Edge */
+.projects-row {
+  -ms-overflow-style: none;
 }
 
 /* ================================

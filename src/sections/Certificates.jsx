@@ -7,7 +7,17 @@ export default function Certificates() {
   const [activeImg, setActiveImg] = useState(null)
 
   return (
-    <section className="section" id="certificates">
+    <section className="certificates-section" id="certificates">
+
+      {/* 🌊 Water bubble background */}
+      <div className="bubble-bg">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <div className="container">
         <h2 className="title">Certificates</h2>
         <br />

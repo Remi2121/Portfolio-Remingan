@@ -1,0 +1,122 @@
+.contact-section {
+  padding: 80px 20px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+
+.contact-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  color: #eaf4ff;
+}
+
+
+.contact-form {
+  width: 100%;
+  max-width: 520px;   /* 🔥 card width */
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+/* INPUTS */
+.contact-input,
+.contact-textarea {
+  background: linear-gradient(
+    145deg,
+    rgba(10, 25, 60, 0.9),
+    rgba(15, 35, 80, 0.9)
+  );
+  border: 1px solid rgba(0, 153, 255, 0.35);
+  border-radius: 14px;
+  padding: 14px 18px;
+  color: #eaf6ff;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+  box-shadow: inset 0 0 12px rgba(0, 153, 255, 0.25);
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  color: #8fbfff;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #00c6ff;
+  box-shadow: 0 0 16px rgba(0, 198, 255, 0.7);
+}
+
+.contact-textarea {
+  min-height: 160px;
+  resize: none;
+}
+
+/* BUTTON */
+.contact-btn {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 16px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff;
+  background: linear-gradient(135deg, #007cf0, #00dfd8);
+  box-shadow: 0 0 20px rgba(0, 180, 255, 0.6);
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 220, 255, 0.9);
+}
+
+.contact-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* MESSAGE */
+.contact-msg {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #9fd4ff;
+}
+
+/* SOCIAL BUTTONS */
+.contact-socials {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-btn {
+  padding: 10px 22px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #cfeaff;
+  border: 1px solid rgba(0, 153, 255, 0.4);
+  background: rgba(5, 20, 45, 0.7);
+  transition: 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 153, 255, 0.4);
+}
+
+.social-btn:hover {
+  color: #ffffff;
+  background: linear-gradient(135deg, #007cf0, #00dfd8);
+  box-shadow: 0 0 25px rgba(0, 220, 255, 0.8);
+}
